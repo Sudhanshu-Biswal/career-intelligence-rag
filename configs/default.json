@@ -1,0 +1,35 @@
+{
+  "dataset": {
+    "hf_dataset_name": "jacob-hugging-face/job-descriptions",
+    "hf_split": "train",
+    "max_documents": 5000,
+    "text_fields": ["job_description"],
+    "metadata_fields": [
+      "position_title",
+      "company_name",
+      "location",
+      "company_type"
+    ]
+  },
+  "ingestion": {
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "batch_size": 100
+  },
+  "retrieval": {
+    "top_k_retrieve": 20,
+    "top_k_rerank": 5,
+    "hyde_enabled": true,
+    "bm25_enabled": true,
+    "rrf_k": 60
+  },
+  "evaluation": {
+    "sample_size": 20,
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "context_precision",
+      "context_recall"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+# Core
+openai>=1.30.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Vector DB
+qdrant-client>=1.9.0
+
+# Retrieval
+rank-bm25>=0.2.2
+cohere>=5.5.0
+
+# Embeddings + HuggingFace dataset
+datasets>=2.19.0
+huggingface-hub>=0.23.0
+
+# Generation
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-qdrant>=0.1.0
+
+# API
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# Evaluation
+ragas>=0.1.9
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Utils
+tqdm>=4.66.0
+tenacity>=8.3.0
+rich>=13.0.0
